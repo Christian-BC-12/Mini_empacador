@@ -1,3 +1,4 @@
+//https://youtube.com/shorts/GqWufEbYm3c proyecto funcionando 
 #include <LiquidCrystal.h>
 #include <Servo.h>
 int motor = 9;
