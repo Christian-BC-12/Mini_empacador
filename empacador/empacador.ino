@@ -35,23 +35,22 @@ void loop()
 {
 if(digitalRead(boton) == HIGH)
 {  
-digitalWrite(sol2,HIGH);
+digitalWrite(sol2,HIGH); //high = low, low = high
 digitalWrite(led3,HIGH);
-digitalWrite(sol1,LOW);
+digitalWrite(sol1,LOW); //high = low, low = high
 delay(100);
 }
 else
 {    
 digitalWrite(led3,LOW);
-digitalWrite(sol1,HIGH);
+digitalWrite(sol1,HIGH); //high = low, low = high
 delay(100);
 }
 if(digitalRead(sensor) == LOW)         
 {  
-digitalWrite(sol1,HIGH);
-digitalWrite(sol2,LOW);
-digitalWrite(led2,LOW);
-delay(100);
+digitalWrite(sol1,HIGH); //high = low, low = high
+digitalWrite(sol2,LOW);  //high = low, low = high
+digitalWrite(led2,LOW); 
 digitalWrite(led1,HIGH);
 delay(1000);
 servo2.write(100);
